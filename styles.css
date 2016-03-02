@@ -1,0 +1,73 @@
+/*
+Author: Tim Storck
+Web Developement II
+Responsive
+February 18, 2016
+*/
+
+
+body {
+    font: 1em Arial, Helvetica, sans-serif;
+    background-color: lightgrey;
+}
+
+.solid {
+    background-color: white;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: rgba(0,0,0,0.2) 1px 3px 5px;
+    border: 1px black solid;
+}
+
+#layout {
+    width: 1000px;
+    margin: auto;
+}
+
+#header {
+    width: 100%;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#nav {
+    width: 20%;
+    float: left;
+    margin-right:10px;
+}
+
+#nav ul{
+    margin-left: -45px;
+    text-align: center;
+}
+
+#nav li{
+    list-style: none;
+}
+
+#nav a{
+    text-decoration: none;
+}
+
+#nav a:hover{
+    color: black;
+}
+
+#main {
+    width: 60%;
+    float: left;
+    text-align: center;
+}
+
+#left {
+    text-align: left;
+}
+
+#footer {
+    width: 100%;
+    float:left;
+    clear: left;
+    margin-top: 10px;
+    margin-bottom:7px;
+    text-align: right;
+}
