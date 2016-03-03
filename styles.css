@@ -8,27 +8,36 @@ February 18, 2016
 
 body {
     font: 1em Arial, Helvetica, sans-serif;
-    background-color: lightgrey;
+    background-color: white;
+    margin-top:32px;
 }
 
 .solid {
     background-color: white;
     padding: 10px;
-    border-radius: 4px;
-    box-shadow: rgba(0,0,0,0.2) 1px 3px 5px;
+    border-radius: 6px;
+    box-shadow: rgba(0,0,0,0.4) 2px 3px 5px;
     border: 1px black solid;
 }
 
 #layout {
-    width: 1000px;
+    width: 800px;
     margin: auto;
 }
 
 #header {
-    width: 100%;
-    margin-bottom: 10px;
+    width: 649px;
+    height: 487px;
+    padding:0;
+    margin-bottom: 23px;
+    margin-left: calc(50% - 324px);
     text-align: center;
+    background-image: url("img/cheet.jpg");
 }
+
+/*header:hover{
+    
+}*/
 
 #nav {
     width: 20%;
@@ -55,8 +64,10 @@ body {
 
 #main {
     width: 60%;
+    margin-left: 20%;/////////remove if nav bar put back [3/2/16]
     float: left;
     text-align: center;
+    /*display:inline;*/
 }
 
 #left {
@@ -67,7 +78,7 @@ body {
     width: 100%;
     float:left;
     clear: left;
-    margin-top: 10px;
+    margin-top: 23px;
     margin-bottom:7px;
     text-align: right;
 }
