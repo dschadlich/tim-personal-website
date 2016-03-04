@@ -7,9 +7,7 @@ Author: Tim Storck
 -->
 
 <!-- the following commented lines are saved snippets
-
-   onMouseOver="mouseOver()" onClick="initialLoad()"
-   onLoad="initialLoad()"
+   
    <link type="text/css" href="mquery.css" rel="stylesheet" /> 
 
 -->
@@ -20,7 +18,7 @@ Author: Tim Storck
 TODO
     tab indent for paragraph [text-indent]
     put css in css folder
-    make image blink
+    touch up corners of image blink
     add readme to git repo
     make article left aligned
     make sections foldable
@@ -31,8 +29,27 @@ TODO
     style footer
     copyright thing for footer
     #layout width
+questions
+    move image initialization to css?
 things to mention at demo:
+    placeholder images make debugging fun
    design reminiscent of paper resume, also simple, to the point and (going for) pleasant 
+    thinking of way to bring color to above-mentioned theme i realized phots of me are appropriate
+        picture worth a thousand words
+        a selection of photos i thought would be cool, im mention blink idea
+    intending to implement folding sections for ease of reading and to demonstrate javascript skills
+        show how html so far lends itself to that
+    helpfulness of comments
+        comment section at beginning of file
+            notes on TODO
+            questions
+            ideas for 
+        putting notes section in separate file is not a bad option but since i like to 
+            refer back and forth to it many times, the little bit less navigating is 
+            nice because with all the many instances of going to it
+    importance of readable code
+        brs on own line etc
+        
 
 -->
 
@@ -44,14 +61,19 @@ things to mention at demo:
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link type="text/css" href="styles.css" rel="stylesheet" />
+        <!--<link type="text/css" href="newcss.css" rel="stylesheet" />-->
         <script src="headerImage.js"></script>
     </head>
-    <body>
+    <body onLoad="changeImage()">
         <div id="layout">
-            <div id="header" class="solid"></div>
-            <div id="main" class="solid">
+            <div id="header" class="solid" onMouseEnter="mouseEnter()">
+            <div id="upperLid"></div>
+            <div id="lowerLid"></div>
+            </div>
+            <div class="main solid">
                 <h1>Tim Storck's Resume</h1>
-                <br /><br />
+                <br />
+                <br />
                 <h2>Contact Information</h2>
                 <article>
                 <br />
@@ -139,6 +161,9 @@ things to mention at demo:
                 <p>
                 </p>
                 <h2 id="references">References Available on Request</h2>
+            </div>
+            <div class="main solid">
+                main 2
             </div>
             <div id="footer" class="solid">
                 Site by Tim Storck 2016
