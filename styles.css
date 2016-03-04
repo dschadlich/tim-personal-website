@@ -23,6 +23,7 @@ body {
 #layout {
     width: 800px;
     margin: auto;
+    border: 1px lightgray solid;
 }
 
 #header {
@@ -35,9 +36,13 @@ body {
     background-image: url("img/cheet.jpg");
 }
 
-/*header:hover{
-    
-}*/
+article {
+    text-align: left;
+}
+
+article ul {
+    margin-left: -30px;
+}
 
 #nav {
     width: 20%;
@@ -48,6 +53,14 @@ body {
 #nav ul{
     margin-left: -45px;
     text-align: center;
+}
+
+.indent {
+    text-indent: 10px;
+}
+
+.indent .indent {
+    text-indent: 20px;
 }
 
 #nav li{
@@ -63,11 +76,11 @@ body {
 }
 
 #main {
+    padding-left: 27px;
     width: 60%;
-    margin-left: 20%;/////////remove if nav bar put back [3/2/16]
+    margin-left: calc(20% - 13px);/////////remove if nav bar put back [3/2/16]
     float: left;
     text-align: center;
-    /*display:inline;*/
 }
 
 #left {
@@ -75,6 +88,8 @@ body {
 }
 
 #footer {
+    color: gray;
+    padding-right: 30px;
     width: 100%;
     float:left;
     clear: left;
