@@ -1,2 +1,2 @@
 # tim-personal-website
-based on my-second-github-repo [An initial test repo for A100 Apprentices to use to practice on.]
+based on my-second-github-repo [for A100 Apprentices]
