@@ -29,6 +29,7 @@ TODO
     style footer
     copyright thing for footer
     #layout width
+    narrow footer
 questions
     move image initialization to css?
 things to mention at demo:
@@ -61,12 +62,12 @@ things to mention at demo:
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link type="text/css" href="styles.css" rel="stylesheet" />
-        <!--<link type="text/css" href="newcss.css" rel="stylesheet" />-->
         <script src="headerImage.js"></script>
+        <script src="collapse.js"></script>
     </head>
-    <body onLoad="changeImage()">
+    <body onLoad="changeImage(); setInitialCollapseState()">
         <div id="layout">
-            <div id="header" class="solid" onMouseEnter="mouseEnter()">
+            <div id="header" class="solid" onMouseEnter="shutter()">
             <div id="upperLid"></div>
             <div id="lowerLid"></div>
             </div>
@@ -74,9 +75,12 @@ things to mention at demo:
                 <h1>Tim Storck's Resume</h1>
                 <br />
                 <br />
-                <h2>Contact Information</h2>
+                <h2 class="alignCenter">Contact Information</h2>
+                <div id="controlsTarget1" class="collapseControl" onclick="toggleCollapse(this)" >
+                    <span></span>
+                    <img src="" alt="collapsible section display arrow button image" />
+                </div>
                 <article>
-                <br />
                 Email: <a href="mailto:timstorck0@gmail.com">timstorck0@gmail.com</a>
                 <br />
                 Mobile: (203) 209-2719
@@ -162,8 +166,14 @@ things to mention at demo:
                 </p>
                 <h2 id="references">References Available on Request</h2>
             </div>
-            <div class="main solid">
-                main 2
+            <div class="main solid" >
+                <div id="controlsTarget1" class="collapseControl" onclick="toggleCollapse(this)" >
+                    <span></span>
+                    <img src="" alt="collapsible section display arrow button image" />
+                </div>
+                <div id="target1" class="isDown">
+                    main 2
+                </div>
             </div>
             <div id="footer" class="solid">
                 Site by Tim Storck 2016

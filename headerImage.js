@@ -6,7 +6,7 @@ imgArr[1].src='img/dog2.jpg';
 imgArr[2].src='img/dog3.jpg';
 
 
-function mouseEnter() {
+function shutter() {
     var upper = document.getElementById('upperLid');
     var lower = document.getElementById('lowerLid');
     upper.style.borderBottom = "1px black solid";
@@ -33,6 +33,7 @@ function mouseEnter() {
     }
 }
 
+//called by onload attribute of body tag in html to initialize image. also called by shutter() function
 function changeImage() {
     document.getElementById('header').style.backgroundImage = "url('" + imgArr[iterator].src + "')";
     if (iterator == imgArr.length -1){

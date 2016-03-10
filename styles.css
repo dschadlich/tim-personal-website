@@ -32,11 +32,12 @@ body {
     background-image: url("img/cheet.jpg");
 }
 
-//eyelid blink animation
 #upperLid{
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
     background-color:white;
     border-bottom: 1px black solid;
-    height:0px;//242 max
+    height:0px;
 }
 #lowerLid{
     background-color:white;
@@ -55,7 +56,6 @@ article ul {
     margin-left: -30px;
 }
 
-//hanging indent
 .indent {
     text-indent: 10px;
 }
@@ -72,11 +72,6 @@ article ul {
     margin-bottom:7px;
     text-align: right;
 }
-#upperLid {
-    border-top-left-radius: 6px;
-    border-top-right-radius: 6px;
-    background-color:white;
-} //not sure why but this seems to want to be here
 
 #nav a:hover{
     color: black;
@@ -84,13 +79,40 @@ article ul {
 
 .main {
     padding-left: 27px;
+    padding-right: 27px;
     width: 60%;
-    margin-left: calc(20% - 13px);
+    margin-left: calc(20% - 27px);
     float: left;
     text-align: center;
     margin-bottom:23px;
 }
 
 #left {
+    text-align: left;
+}
+
+.collapseControl {
+    /*background-color: lightgray;*/
+    cursor: pointer;
+    cursor: hand;
+    display: inline;
+    /*float: right*/
+    text-align: right;
+}
+
+/*.alignRight {
+    float: left;
+    width:33.33333%;
+    text-align:center;
+}
+
+.alignCenter {
+    float: left;
+    width:33.33333%;
+    text-align:right;
+}*/
+
+h2 {
+    display: inline;
     text-align: left;
 }
