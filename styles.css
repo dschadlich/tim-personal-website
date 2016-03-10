@@ -2,6 +2,11 @@
 Author: Tim Storck
 */
 
+/*
+notes
+    changed main text align to left, may be able to remove align from chilren
+*/
+
 
 body {
     font: 1em Arial, Helvetica, sans-serif;
@@ -87,32 +92,19 @@ article ul {
     margin-bottom:23px;
 }
 
-#left {
-    text-align: left;
+.absoluteForCenterAndRightAlign {
+    position: relative;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
 }
 
 .collapseControl {
-    /*background-color: lightgray;*/
     cursor: pointer;
     cursor: hand;
-    display: inline;
-    /*float: right*/
-    text-align: right;
-}
-
-/*.alignRight {
-    float: left;
-    width:33.33333%;
-    text-align:center;
-}
-
-.alignCenter {
-    float: left;
-    width:33.33333%;
-    text-align:right;
-}*/
-
-h2 {
-    display: inline;
-    text-align: left;
+    position:absolute;
+    top:6px;
+    right:0px;
 }
