@@ -1,0 +1,66 @@
+/* 
+
+Author: Tim Storck
+Web Developement II
+Responsive
+February 18, 2016
+
+*/
+
+@media screen and (max-width: 970px){
+    #layout{
+        width: 680px;
+    }
+    
+    .main {
+        width:480px;
+        clear: left;
+        margin-left: 73px;
+    }
+}
+@media screen and (max-width: 760px){
+    
+    #layout{
+        width: 390px;
+    }
+    
+    #header{
+        width:390px;
+        height: 293px;
+        margin-left: calc(50% - 195px);
+        background-size: 390px 293px;
+    }
+    
+    .main{
+        width:336px;
+        margin-left:0;
+    }
+    
+    #footer {
+        width: calc(100% - 30px);
+    }
+}
+
+@media screen and (max-width: 470px) {
+    
+    #layout{
+        width: 230px;
+    }
+    
+    #header{
+        width: 230px;
+        height: 173px;
+        margin-left: calc(50% - 115px);
+        background-size: 230px 173px;
+    }
+    
+    .main{
+        width:216px;
+        padding-left: 7px;
+        padding-right: 7px;
+    }
+    
+    .collapseControl {
+        position: relative;
+    }
+}

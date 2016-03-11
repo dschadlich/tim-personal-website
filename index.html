@@ -8,7 +8,6 @@ Author: Tim Storck
 
 <!-- the following commented lines are saved snippets
    
-   <link type="text/css" href="mquery.css" rel="stylesheet" /> 
 
 -->
 
@@ -19,17 +18,14 @@ recently done
     figured out bug in css [//comments]
     got collase working
     figured out how to have center align and right align on same line
+    made responsive
+    started working on way to scale header animation for responsive
 TODO
+    figure out what to do about no mouseover with mobile devices
+    see if javascript can know if screen size changes to isolate screen size calc
+    add other jobs area
+    table for contact info
     include location somewhere?
-    tab indent for paragraph [text-indent]?
-    put css in css folder?
-    test email link
-    check HTML5 compliance
-    check css3 compliance
-    make responsive
-    style footer?
-    copyright thing for footer?
-    #layout width?
     optimize javascript allocations
 questions
     move image initialization to css?
@@ -43,15 +39,28 @@ questions
         <title>Tim Storck's Resume</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link type="text/css" href="styles.css" rel="stylesheet" />
-        <script src="headerImage.js"></script>
-        <script src="collapse.js"></script>
+        <link type="text/css" href="css/styles.css" rel="stylesheet" />
+        <link type="text/css" href="css/mquery.css" rel="stylesheet" /> 
+        <script src="javascript/headerImage.js"></script>
+        <script src="javascript/collapse.js"></script>
     </head>
     <body onLoad="changeImage(); setInitialCollapseState()">
         <div id="layout">
+            
+            
+            <!-- the following div is used for testing -->
+            
+<!--            <div class="solid" style="display:inline-block;margin-bottom:23px;margin-left:48%">
+                <img onclick="testGetIncrementerTimesNegativeOne()" src="img/testbtn.jpg" alt="img didnt load" id="testBtn" style="cursor:pointer;cursor:hand;"/>
+                <span id="testSpan"></span>
+            </div>-->
+            
+            <!--the preceeding div is used for testing -->
+            
+            
             <div id="header" class="solid" onMouseEnter="shutter()">
-            <div id="upperLid"></div>
-            <div id="lowerLid"></div>
+                <div id="upperLid"></div>
+                <div id="lowerLid"></div>
             </div>
             <div class="main solid">
                 <h1>Tim Storck's Resume</h1>
@@ -70,7 +79,7 @@ questions
                     <article>
                     Email: <a href="mailto:timstorck0@gmail.com">timstorck0@gmail.com</a>
                     <br />
-                    Mobile: (203) 209-2719
+                    Mobile: (203) 209-2714
                     <br />
                     <br />
                     </article>
@@ -98,6 +107,7 @@ questions
                         <li>XML</li>
                         <li>XSLT</li>
                         <li>HTML</li>
+                        <li>XHTML</li>
                         <li>CSS</li>
                         <li>Javascript</li>
                         <li>PHP</li>
@@ -112,7 +122,10 @@ questions
                         <li>NCC Smartphone App Developer Certificate</li>
                         <li>NCC Web Developer Certificate</li>
                     </ul>
-                    <a href="https://github.com/TimStorck">GitHub</a>
+                    <h4>Links</h4>
+                    <ul>
+                        <li><a href="https://github.com/TimStorck">GitHub</a></li>
+                    </ul>
                     </article>
                 </div>
             </div>
@@ -178,6 +191,9 @@ questions
                         </div>
                     </div>
                     <h4>Certifications</h4>
+                    <ul>
+                        <li>ServSafe Certified</li>
+                    </ul>
                     </article>
                 </div>
             </div>

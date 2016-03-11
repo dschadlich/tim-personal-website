@@ -13,17 +13,17 @@ body {
     margin-top:32px;
 }
 
+#layout {
+    width: 800px;
+    margin: auto;
+}
+
 .solid {
     background-color: white;
     padding: 10px;
     border-radius: 6px;
     box-shadow: rgba(0,0,0,0.4) 2px 3px 5px;
     border: 1px black solid;
-}
-
-#layout {
-    width: 800px;
-    margin: auto;
 }
 
 #header {
@@ -33,52 +33,22 @@ body {
     margin-bottom: 23px;
     margin-left: calc(50% - 324px);
     text-align: center;
-    background-image: url("img/cheet.jpg");
+    background-image: url("../img/enablescript.jpg");
 }
 
 #upperLid{
     border-top-left-radius: 6px;
     border-top-right-radius: 6px;
-    background-color:white;
-    border-bottom: 1px black solid;
+    background-color:#e4e4e4;
     height:0px;
 }
+
 #lowerLid{
-    background-color:white;
+    background-color:#e4e4e4;
     border-bottom-left-radius: 6px;
     border-bottom-right-radius: 6px;
-    border-top: 1px black solid;
     height:0px;
     position:relative;
-}
-
-article {
-    text-align: left;
-}
-
-article ul {
-    margin-left: -20px;
-}
-
-.indent {
-    text-indent: 20px;
-}
-.indent .indent {
-    text-indent: 40px;
-}
-
-#footer {
-    color: gray;
-    padding-right: 20px;
-    width: 100%;
-    float:left;
-    clear: left;
-    margin-bottom:7px;
-    text-align: right;
-}
-
-#nav a:hover{
-    color: black;
 }
 
 .main {
@@ -89,6 +59,15 @@ article ul {
     float: left;
     text-align: center;
     margin-bottom:23px;
+}
+
+article {
+    text-align: left;
+    line-height: 150%;
+}
+
+article ul {
+    margin-left: -20px;
 }
 
 .absoluteForCenterAndRightAlign {
@@ -102,4 +81,22 @@ article ul {
     position:absolute;
     top:6px;
     right:0px;
+}
+
+.indent {
+    text-indent: 20px;
+}
+
+.indent .indent {
+    text-indent: 40px;
+}
+
+#footer {
+    color: gray;
+    padding-right: 20px;
+    width: 100%;
+    float:left;
+    clear: left;
+    margin-bottom:7px;
+    text-align: right;
 }

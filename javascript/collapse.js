@@ -27,11 +27,11 @@ function setInitialCollapseState() {
         
         if (isDown(targetElem)) {
             txt.innerHTML = "Hide";
-            img.src = "siteImg/arrowDown.png";
+            img.src = "img/arrowDown.png";
             targetElem.style.display = "block";
         } else {
             txt.innerHTML = "Show";
-            img.src = "siteImg/arrowLeft.png";
+            img.src = "img/arrowLeft.png";
             targetElem.style.display = "none";
         }
     }
@@ -46,12 +46,12 @@ function toggleCollapse(control) {
         
     if (isDown(targetElem)) {
         txt.innerHTML = "Show";
-        img.src = "siteImg/arrowLeft.png";
+        img.src = "img/arrowLeft.png";
         targetElem.style.display = "none";
         targetElem.className = targetElem.getAttribute("class").replace("isDown", "isUp");
     } else {
         txt.innerHTML = "Hide";
-        img.src = "siteImg/arrowDown.png";
+        img.src = "img/arrowDown.png";
         targetElem.style.display = "block";
         targetElem.className = targetElem.getAttribute("class").replace("isUp", "isDown");
     }
