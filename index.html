@@ -21,23 +21,16 @@ recently done
     figured out how to have center align and right align on same line
 TODO
     include location somewhere?
-    section for github link
-    add a100
-    add languages
-    tab indent for paragraph [text-indent]
-    put css in css folder
-    touch up corners of image blink
-    add readme to git repo
-    make article left aligned
-    make sections foldable
+    tab indent for paragraph [text-indent]?
+    put css in css folder?
     test email link
     check HTML5 compliance
     check css3 compliance
     make responsive
-    style footer
-    copyright thing for footer
-    #layout width
-    narrow footer
+    style footer?
+    copyright thing for footer?
+    #layout width?
+    optimize javascript allocations
 questions
     move image initialization to css?
   
@@ -62,9 +55,12 @@ questions
             </div>
             <div class="main solid">
                 <h1>Tim Storck's Resume</h1>
-                <br />
+                <h3>About Tim</h3>
+                <article>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </article>
                 <div class="absoluteForCenterAndRightAlign">
-                    <h2>Contact Information</h2>
+                    <h3>Contact Information</h3>
                     <div id="controlsTarget1" class="collapseControl" onclick="toggleCollapse(this)" >
                         <span></span>
                         <img src="" alt="collapsible section display arrow button image" />
@@ -79,16 +75,48 @@ questions
                     <br />
                     </article>
                 </div>
-                <h2>Education</h2>
-                <article>
-                    <ul>
-                        <li>High School Diploma from Fairfield College Preparatory School</li>
-                        <li>Associates Degree in Computer Science from Norwalk Community College expected in May 2016</li>
-                    </ul>
-                </article>
-                <br />
             </div>
             <div class="main solid" >
+                <div class="absoluteForCenterAndRightAlign">
+                    <h3>Programming</h3>
+                    <div id="controlsTarget3" class="collapseControl" onclick="toggleCollapse(this)" >
+                        <span></span>
+                        <img src="" alt="collapsible section display arrow button image" />
+                    </div>
+                </div>
+                <div id="target3" class="isDown">
+                    <article>
+                    <h4>Languages</h4>
+                    <ul>
+                        <li>C</li>
+                        <li>C++</li>
+                        <li>Objective-C</li>
+                        <li>Java</li>
+                        <li>Swift</li>
+                        <li>SQL</li>
+                        <li>PL/SQL</li>
+                        <li>XML</li>
+                        <li>XSLT</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Javascript</li>
+                        <li>PHP</li>
+                    </ul>
+                    <h4>Education</h4>
+                    <ul>
+                        <li>A100 Apprenticeship Program</li>
+                        <li>Associates Degree in Computer Science from Norwalk Community College</li>
+                    </ul>
+                    <h4>Certificates</h4>
+                    <ul>
+                        <li>NCC Smartphone App Developer Certificate</li>
+                        <li>NCC Web Developer Certificate</li>
+                    </ul>
+                    <a href="https://github.com/TimStorck">GitHub</a>
+                    </article>
+                </div>
+            </div>
+                <div class="main solid" >
                 <div class="absoluteForCenterAndRightAlign">
                     <h3>Cooking</h3>
                     <div id="controlsTarget2" class="collapseControl" onclick="toggleCollapse(this)" >
@@ -152,28 +180,6 @@ questions
                     <h4>Certifications</h4>
                     </article>
                 </div>
-            </div>
-            <div class="main solid" >
-                <div class="absoluteForCenterAndRightAlign">
-                    <h3>Programming</h3>
-                    <div id="controlsTarget3" class="collapseControl" onclick="toggleCollapse(this)" >
-                        <span></span>
-                        <img src="" alt="collapsible section display arrow button image" />
-                    </div>
-                </div>
-                <div id="target3" class="isDown">
-                    <article>
-                    <h4>Skills</h4>
-                    <h4>Work Experience</h4>
-                    <h4>Certificates</h4>
-                    </article>
-                </div>
-                <br />
-                <article>
-                </article>
-                <p>
-                </p>
-                <h2 id="references">References Available on Request</h2>
             </div>
             <div id="footer" class="solid">
                 Site by Tim Storck 2016

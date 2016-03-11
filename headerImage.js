@@ -1,3 +1,7 @@
+/*
+ * Author: Tim Storck
+ */
+
 var iterator = 0;
 
 var imgArr = new Array(new Image(), new Image(), new Image());

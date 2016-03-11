@@ -1,4 +1,8 @@
 /*
+ * Author: Tim Storck
+ */
+
+/*
  * 
  * target element has to contain class value "isDown" or "isUp"
  * 
