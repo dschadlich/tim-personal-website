@@ -15,193 +15,207 @@ Author: Tim Storck
 <!-- the following commented lines are notes to self
 
 recently done
-    figured out bug in css [//comments]
-    got collase working
-    figured out how to have center align and right align on same line
-    made responsive
-    started working on way to scale header animation for responsive
+figured out bug in css [//comments]
+got collase working
+figured out how to have center align and right align on same line
+made responsive
+started working on way to scale header animation for responsive
 TODO
-    figure out what to do about no mouseover with mobile devices
-    see if javascript can know if screen size changes to isolate screen size calc
-    add other jobs area
-    table for contact info
-    include location somewhere?
-    optimize javascript allocations
+figure out what to do about no mouseover with mobile devices
+see if javascript can know if screen size changes to isolate screen size calc
+add other jobs area
+table for contact info
+include location somewhere?
+optimize javascript allocations
 questions
-    move image initialization to css?
+move image initialization to css?
 
 -->
 
 <!--  -->
 
 <html>
-    <head>
-        <title>Tim Storck's Resume</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css" rel="stylesheet">
+<head>
+  <title>Tim Storck's Resume</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css" rel="stylesheet">
 
-        <link type="text/css" href="css/styles.css" rel="stylesheet" />
-        <link type="text/css" href="css/mquery.css" rel="stylesheet" />
-        <script src="javascript/headerImage.js"></script>
-        <script src="javascript/collapse.js"></script>
-    </head>
-    <body onLoad="changeImage(); setInitialCollapseState()">
-        <div id="layout">
-
-
-            <!-- the following div is used for testing -->
-
-<!--            <div class="solid" style="display:inline-block;margin-bottom:23px;margin-left:48%">
-                <img onclick="testGetIncrementerTimesNegativeOne()" src="img/testbtn.jpg" alt="img didnt load" id="testBtn" style="cursor:pointer;cursor:hand;"/>
-                <span id="testSpan"></span>
-            </div>-->
-
-            <!--the preceeding div is used for testing -->
+  <link type="text/css" href="css/styles.css" rel="stylesheet" />
+  <link type="text/css" href="css/mquery.css" rel="stylesheet" />
+  <script src="javascript/headerImage.js"></script>
+  <script src="javascript/collapse.js"></script>
+</head>
+<body onLoad="changeImage();">
+  <div id="layout">
 
 
-            <div id="header" class="solid" onMouseEnter="shutter()">
-                <div id="upperLid"></div>
-                <div id="lowerLid"></div>
+    <!-- the following div is used for testing -->
+
+    <!--            <div class="solid" style="display:inline-block;margin-bottom:23px;margin-left:48%">
+    <img onclick="testGetIncrementerTimesNegativeOne()" src="img/testbtn.jpg" alt="img didnt load" id="testBtn" style="cursor:pointer;cursor:hand;"/>
+    <span id="testSpan"></span>
+  </div>-->
+
+  <!--the preceeding div is used for testing -->
+
+
+  <div id="header" class="solid" onMouseEnter="shutter()">
+    <div id="upperLid"></div>
+    <div id="lowerLid"></div>
+  </div>
+  <div class="main solid">
+    <h1>Tim Storck's Resume</h1>
+    <h3>About Tim</h3>
+    <article>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </article>
+    <div class="absoluteForCenterAndRightAlign">
+      <h3>Contact Information</h3>
+      <div class="collapseControl">
+        <span></span>
+        <img src="" alt="collapsible section display arrow button image" />
+      </div>
+      <div class="isUp controlsTarget" id="target1">
+        <article>
+          Email: <a href="mailto:timstorck0@gmail.com">timstorck0@gmail.com</a>
+          <br />
+          Mobile: (203) 209-2714
+          <br />
+          <br />
+        </article>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="main solid" >
+
+
+    <div class="absoluteForCenterAndRightAlign">
+      <h3>Programming</h3>
+      <div class="collapseControl">
+        <span></span>
+        <img src="" alt="collapsible section display arrow button image" />
+      </div>
+
+      <div class="isUp controlsTarget">
+        <article>
+          <h4>Languages</h4>
+          <ul>
+            <li>C</li>
+            <li>C++</li>
+            <li>Objective-C</li>
+            <li>Java</li>
+            <li>Swift</li>
+            <li>SQL</li>
+            <li>PL/SQL</li>
+            <li>XML</li>
+            <li>XSLT</li>
+            <li>HTML</li>
+            <li>XHTML</li>
+            <li>CSS</li>
+            <li>Javascript</li>
+            <li>PHP</li>
+          </ul>
+          <h4>Education</h4>
+          <ul>
+            <li>A100 Apprenticeship Program</li>
+            <li>Associates Degree in Computer Science from Norwalk Community College</li>
+          </ul>
+          <h4>Certificates</h4>
+          <ul>
+            <li>NCC Smartphone App Developer Certificate</li>
+            <li>NCC Web Developer Certificate</li>
+          </ul>
+          <h4>Links</h4>
+          <ul>
+            <li><a href="https://github.com/TimStorck">GitHub</a></li>
+          </ul>
+        </article>
+      </div>
+      
+    </div>
+
+
+
+  </div>
+
+
+
+
+  <div class="main solid" >
+    <div class="absoluteForCenterAndRightAlign">
+      <h3>Cooking</h3>
+      <div class="collapseControl">
+        <span></span>
+        <img src="" alt="collapsible section display arrow button image" />
+      </div>
+      <div class="isUp controlsTarget">
+        <article>
+          <h4>Skills</h4>
+          <ul>
+            <li>American cuisine</li>
+            <li>Italian cuisine</li>
+            <li>Banquets</li>
+            <li>Short orders</li>
+            <li>Line cook</li>
+            <li>Prep</li>
+            <li>Dish washing</li>
+            <li>Saute</li>
+            <li>Grill</li>
+          </ul>
+          <h4>Responsibilities Held</h4>
+          <ul>
+            <li>Creating specials</li>
+            <li>Training </li>
+            <li>Supervising </li>
+            <li>Inventories </li>
+            <li>Ordering </li>
+            <li>Merchandising </li>
+            <li>Doing pasta, omelette, stir-fry, and carving stations for parties </li>
+          </ul>
+          <h4>Work Experience</h4>
+          March 2012 - Present
+          <div class="indent">
+            Tashua Knolls Banquets (Trumbull, CT)
+            <div class="indent">
+              Banquet Chef, Line Cook
             </div>
-            <div class="main solid">
-                <h1>Tim Storck's Resume</h1>
-                <h3>About Tim</h3>
-                <article>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </article>
-                <div class="absoluteForCenterAndRightAlign">
-                    <h3>Contact Information</h3>
-                    <div id="controlsTarget1" class="collapseControl" onclick="toggleCollapse(this)" >
-                        <span></span>
-                        <img src="" alt="collapsible section display arrow button image" />
-                    </div>
-                </div>
-                <div class="isUp" id="target1">
-                    <article>
-                    Email: <a href="mailto:timstorck0@gmail.com">timstorck0@gmail.com</a>
-                    <br />
-                    Mobile: (203) 209-2714
-                    <br />
-                    <br />
-                    </article>
-                </div>
+          </div>
+          April 2010 - June 2013
+          <div class="indent">
+            Cracker Barrel (Milford, CT)
+            <div class="indent">
+              Back-up Cook, Prep Cook
             </div>
-            <div class="main solid" >
-                <div class="absoluteForCenterAndRightAlign">
-                    <h3>Programming</h3>
-                    <div id="controlsTarget3" class="collapseControl" onclick="toggleCollapse(this)" >
-                        <span></span>
-                        <img src="" alt="collapsible section display arrow button image" />
-                    </div>
-                </div>
-                <div id="target3" class="isDown">
-                    <article>
-                    <h4>Languages</h4>
-                    <ul>
-                        <li>C</li>
-                        <li>C++</li>
-                        <li>Objective-C</li>
-                        <li>Java</li>
-                        <li>Swift</li>
-                        <li>SQL</li>
-                        <li>PL/SQL</li>
-                        <li>XML</li>
-                        <li>XSLT</li>
-                        <li>HTML</li>
-                        <li>XHTML</li>
-                        <li>CSS</li>
-                        <li>Javascript</li>
-                        <li>PHP</li>
-                    </ul>
-                    <h4>Education</h4>
-                    <ul>
-                        <li>A100 Apprenticeship Program</li>
-                        <li>Associates Degree in Computer Science from Norwalk Community College</li>
-                    </ul>
-                    <h4>Certificates</h4>
-                    <ul>
-                        <li>NCC Smartphone App Developer Certificate</li>
-                        <li>NCC Web Developer Certificate</li>
-                    </ul>
-                    <h4>Links</h4>
-                    <ul>
-                        <li><a href="https://github.com/TimStorck">GitHub</a></li>
-                    </ul>
-                    </article>
-                </div>
+          </div>
+          December 2007 - April 2008
+          <div class="indent">
+            Burger Bob's (Bozeman, MT)
+            <div class="indent">
+              Line Cook
             </div>
-                <div class="main solid" >
-                <div class="absoluteForCenterAndRightAlign">
-                    <h3>Cooking</h3>
-                    <div id="controlsTarget2" class="collapseControl" onclick="toggleCollapse(this)" >
-                        <span></span>
-                        <img src="" alt="collapsible section display arrow button image" />
-                    </div>
-                </div>
-                <div id="target2" class="isUp">
-                    <article>
-                    <h4>Skills</h4>
-                    <ul>
-                        <li>American cuisine</li>
-                        <li>Italian cuisine</li>
-                        <li>Banquets</li>
-                        <li>Short orders</li>
-                        <li>Line cook</li>
-                        <li>Prep</li>
-                        <li>Dish washing</li>
-                        <li>Saute</li>
-                        <li>Grill</li>
-                    </ul>
-                    <h4>Responsibilities Held</h4>
-                    <ul>
-                        <li>Creating specials</li>
-                        <li>Training </li>
-                        <li>Supervising </li>
-                        <li>Inventories </li>
-                        <li>Ordering </li>
-                        <li>Merchandising </li>
-                        <li>Doing pasta, omelette, stir-fry, and carving stations for parties </li>
-                    </ul>
-                    <h4>Work Experience</h4>
-                    March 2012 - Present
-                    <div class="indent">
-                        Tashua Knolls Banquets (Trumbull, CT)
-                        <div class="indent">
-                            Banquet Chef, Line Cook
-                        </div>
-                    </div>
-                    April 2010 - June 2013
-                    <div class="indent">
-                        Cracker Barrel (Milford, CT)
-                        <div class="indent">
-                            Back-up Cook, Prep Cook
-                        </div>
-                    </div>
-                    December 2007 - April 2008
-                    <div class="indent">
-                        Burger Bob's (Bozeman, MT)
-                        <div class="indent">
-                            Line Cook
-                        </div>
-                    </div>
-                    August 2006 - October 2007
-                    <div class="indent">
-                        Cateye Cafe (Bozeman, MT)
-                        <div class="indent">
-                            Prep Cook
-                        </div>
-                    </div>
-                    <h4>Certifications</h4>
-                    <ul>
-                        <li>ServSafe Certified</li>
-                    </ul>
-                    </article>
-                </div>
+          </div>
+          August 2006 - October 2007
+          <div class="indent">
+            Cateye Cafe (Bozeman, MT)
+            <div class="indent">
+              Prep Cook
             </div>
-            <div id="footer" class="solid">
-                Site by Tim Storck 2016
-            </div>
-        </div>
-    </body>
+          </div>
+          <h4>Certifications</h4>
+          <ul>
+            <li>ServSafe Certified</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+
+  </div>
+  <div id="footer" class="solid">
+    Site by Tim Storck 2016
+  </div>
+</div>
+</body>
 </html>
